@@ -1,8 +1,12 @@
 body{
-    background-color:#545454;
+    background-image: url(/imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 #p1{
-    color:tomato
+    color: rgb(255, 0, 0);
 }
 #p2{
     color:rgb(102,222,255)
