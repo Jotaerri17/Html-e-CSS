@@ -15,7 +15,7 @@
     text-align: center;
 
     min-height: 50%; 
-} */
+} 
 #box1{
     width: 200px;
     height: 200px;
@@ -32,4 +32,13 @@
     position: static;
     top: 50px;
     left: 50px;
+} */
+
+#greet p{
+    background-color: rgb(0, 145, 255);
+    padding: 10px;
+    display: none;
+}
+#greet:hover p{
+    display: block;
 }
