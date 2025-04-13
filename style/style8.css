@@ -16,4 +16,115 @@
 }
 .fa-brands.fa-youtube.fa-5x{
     color:red;
-} */
+} 
+ .container{
+    display: flex;
+    border: 10px solid black;
+    height: 90vh;
+    
+    
+    
+ }
+ .box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+ }
+ #box1{
+    background-color: hsl(0,100%,70%);
+    
+
+ }
+ #box2{
+    background-color: hsl(52,100%,70%);
+    
+ }
+ #box3{
+    background-color: hsl(111,100%,70%);
+ }
+ #box4{
+    background-color: hsl(201,100%,70%);
+ } 
+body{
+    margin:0px;
+}
+.box{
+    width:250px;
+    height:250px;
+    border:5px solid;
+    font-size: 13em;
+    text-align: center;
+    transform: translateX(100px) rotateZ(45deg);
+}
+#box1{
+    background-color: hsl(120,100%,70%);
+}
+#box2{
+    background-color: hsl(300, 74%, 28%);
+}
+#box3{
+    background-color:hsl(0, 100%, 50%);
+}
+
+    /*transform:translateX(50px) ; move para a direita, se por -50px move para a esquerda, translateY cima e baixo, ou usa translate(0,0) */
+    /*transform: rotateZ(45deg)  rotaciona a box, x e y para os lados e z para cima e baixo, se colocar 3 valores rotaciona os 3 e o valor em grau */;
+    /* transform: sclate(2,3) Muda a escala da box, o primeiro valor é para o eixo x e o segundo para o eixo y, se colocar 3 valores muda os 3 e o valor em porcentagem */
+    /*transform: skew(20deg, 30deg); Muda a inclinação da box, o primeiro valor é para o eixo x e o segundo para o eixo y, se colocar 3 valores muda os 3 e o valor em porcentagem */
+
+
+
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: hsl(0, 95%, 54%);
+    font-size: 13em;
+    text-align: center;
+} 
+img{
+    animation-name: slideDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes slideleft{
+    from{transform: translateX(300%)}
+}
+@keyframes slideRight{
+    to{transform: translateX(300%)}
+}
+@keyframes slideUp{
+    from{transform: translateX(300%)}
+}
+@keyframes slideDown{
+    to{transform: translateX(300%)}
+}
+@keyframes rotate{
+    50%{transform: rotateX(360deg)}
+}
+@keyframes grow{
+    100%{transform: sclae(2, 2)} /* 50% ele faz a animação de volta para o tamanho original */
+}
+@keyframes shrink{
+    50%{transform: scale(0.5, 0.5)}
+}
+@keyframe fade{
+    50%{opacity: 0}
+}
+@keyframes colorChange{
+    0%{background-color: hsl(0, 95%, 54%)}
+    20%{background-color:  hsl(32, 96%, 50%)}
+    40%{background-color:  hsl(55, 96%, 50%)}
+    60%{background-color:  hsl(113, 96%, 50%)}
+    80%{background-color:  hsl(240, 96%, 50%)}
+    100%{background-color:  hsl(298, 96%, 50%)}
+}
+@keyframes glow{
+    50%{box-shadown: 0px 0px 50px hsl(60,100%,50%)}
+}
